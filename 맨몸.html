@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>맨몸 운동</title>
+        <style type="text/css">
+        *{margin:0;padding:0;}
+
+            header{padding-bottom: 25px;
+                margin-top: 10px;
+                margin-bottom:5px;
+                display: flex;
+                flex-wrap:nowrap;
+            }
+            #slogan{
+                position: relative;
+                display:inline-block;
+                font-size:30px;
+                padding: 22px 0px 0px 0px;
+                margin-bottom: 0px;
+                color: black;
+                text-shadow: 3px 3px 1px 1px gray;
+                font-family:"궁서체";
+                width:2000px;
+            }
+            #slogan p {
+                text-align:center;
+            }
+            #search{
+                margin:17px;
+            }
+            button{
+                margin:0;
+                padding:0;
+                border:0;
+            }
+            img{
+                display:block;
+                border:0;
+            }
+            nav{
+                width:100%;
+                display:flex;
+                justify-content:center;
+                position:relative;
+                background: #424242;
+                font-family:"궁서체";
+                margin-bottom:30px;
+            }
+
+            #main-menu, #sub-menu{
+                margin:0;
+                padding:0;
+                list-style:none;
+            }
+
+            #main-menu > li{
+                float: left;
+                position: relative;
+            }
+
+            #main-menu > li > a{
+                font-size: 1rem;
+                color:rgba(255,255,255,0.85);
+                text-align:center;
+                text-decoration: none;
+                letter-spacing: 0.05em;
+                display:block;
+                padding:12px 36px;
+                border-right:1px solid rgba(0,0,0,0.15);
+                text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+            }
+
+            #main-menu > li:nth-child(1) > a{
+                border-left:1px solid rgba(0,0,0,0.15);
+            }
+
+            #sub-menu{
+                position:absolute;
+                background:#000000;
+                opacity:0;
+                visibility:hidden;
+                transition: all 0.15s ease-in;
+            }
+
+            #sub-menu > li{
+                padding:16px 28px;
+                border-bottom:1px solid rgb(255, 255, 255);
+                width: 150px;
+            }
+
+            #sub-menu > li > a{
+                color: rgba(255,255,255,0.6);
+                text-decoration:none;
+            }
+
+            #main-menu > li:hover #sub-menu{
+                opacity:1;
+                visibility:visible;
+            }
+            #content{
+                display:block;
+                width:702px;
+                padding:10px;
+                float:right;
+                border:1px solid black;
+                border-left:0px;
+            }
+            #sidebar{
+                display:block;
+                width:160px;
+                padding:20px;
+                float:left;
+                border:1px solid black;
+                padding-bottom:0px;
+                margin-bottom:30px;
+            }
+            .sidebar ul li{
+                border:1px solid black;
+                padding:5px;
+                border-left:0px;
+                border-right:0px;
+            }
+            .sidebar > ul{
+                list-style:none;
+                display:block;
+                width:100%;
+            }
+            .headmenu{
+                margin-top:-10px;
+            }
+            #article{
+                display:block;
+                width:926px;
+                margin:0 auto;
+                right:0;
+                left:0;
+            }
+            .sidetitle{
+                margin-left:-20px;
+                margin-right:-20px;
+                font-size:20px;
+                font-family:"궁서체";
+                color:#fff;
+                background-color:black;
+                padding:5px;
+                font-weight:bolder;
+            }
+            .headmenu{
+                margin-top:-20px;
+            }
+            .sidebar >ul> a>li{
+                display:relative;
+                width:190px;
+                margin-left:-20px;
+                margin-right:-40px;
+                font-family:"궁서체";
+                font-size:18px;
+                background:#424242;
+                color:#D8D8D8;
+            }
+            .sidebar >ul>a{
+                text-decoration:none;
+            }
+            .sidebar >ul >a>li:hover{
+                background:#D8D8D8;
+                color:#424242;
+            }
+
+            .sidebar >ul> div>a>li{
+                display:relative;
+                width:190px;
+                margin-left:-20px;
+                margin-right:-40px;
+                font-family:"궁서체";
+                font-size:18px;
+                background:linear-gradient(90deg, #424242, #848484, #D8D8D8, #FFFFFF);
+                color:#D8D8D8;
+            }
+            .sidebar >ul>div>a{
+                text-decoration:none;
+            }
+        </style>
+        <link rel="stylesheet" href="css/box2.css">
+    </head>
+    <body>
+        <header>
+                <div id="logo"><a href="index.html"><img src="건신.jpg" height="80px"></a></div>
+                <div id="slogan"><p>건강한 신체에 건강한 정신이 깃든다.</p></div>
+                <div id="search"><button id="searchButton"><img src="search.jpg" height="40px"></button>
+                </div>
+        </header>
+        <nav id="navBar" style="z-index:999;">
+            <ul id="main-menu">
+                <li><a href="개발자소개.html">개발자 소개</a>
+                    <ul id="sub-menu">
+                        <li><a href="개발자소개.html">임호균</a></li>
+                    </ul>
+                </li>
+                <li><a href="홈트레이닝.html">홈 트레이닝</a>
+                    <ul id="sub-menu">
+                        <li><a href="철봉.html">철봉</a></li>
+                        <li><a href="맨몸.html">맨몸</a></li>
+                        <li><a href="아령.html">아령</a></li>
+                        <li><a href="밴드.html">밴드</a></li>
+                    </ul>
+                </li>
+                <li><a href="">헬스장 운동</a>
+                    <ul id="sub-menu">
+                            <li><a href="">팔</a></li>
+                            <li><a href="">다리</a></li>
+                            <li><a href="">어깨</a></li>
+                            <li><a href="">가슴</a></li>
+                            <li><a href="">등</a></li>
+                            <li><a href="">복근</a></li>
+                    </ul>
+                </li>
+                <li><a href="">호신술</a>
+                    <ul id="sub-menu">
+                        <li><a href="">동양무술</a></li>
+                        <li><a href="">서양무술</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <div id="article">
+        <section id="sidebar">
+            <div class="sidebar">
+                <ul class="headmenu"><div class="sidetitle">개발자 소개</div>
+                    <a href="개발자소개.html"><li class="director">임호균</li></a>
+                </ul>
+                <ul><div class="sidetitle">홈 트레이닝</div>
+                    <a href="철봉.html"><li class="철봉">철봉</li></a>
+                    <div><a href="맨몸.html"><li class="맨몸">맨몸</li></a></div>
+                    <a href="아령.html"><li class="아령">아령</li></a>
+                    <a href="밴드.html"><li class="밴드">밴드</li></a>
+                </ul>
+                <ul><div class="sidetitle">헬스장 운동</div>
+                    <a href=""><li>팔</li></a>
+                    <a href=""><li>다리</li></a>
+                    <a href=""><li>어깨</li></a>
+                    <a href=""><li>가슴</li></a>
+                    <a href=""><li>등</li></a>
+                    <a href=""><li>복근</li></a>
+                </ul>
+                <ul><div class="sidetitle">호신술</div>
+                    <a href=""><li>동양무술</li></a>
+                    <a href=""><li>서양무술</li></a>
+                </ul>
+            </div>
+        </section>
+        <section id="contentbox">
+                <section>
+                        <div>
+                            <h3>맨몸운동은...</h3>
+                            <p>
+                                &nbsp;집에서 최소한의 범위 안에서 최대한의 이득을 볼 수 있는
+                                운동들을 모아놓은 것으로 집에서 아무런 도구없이 그저 맨몸만 
+                                있으면 즐겁게 할 수 있는 운동입니다.
+                            </p>
+                        </div>
+                </section>
+                <div id="bigBox1">
+                    <div class="box2"><p><a href="푸쉬업.html">푸쉬업</a></p></div>
+                    <div class="box2"><p><a href="">스쿼트</a></p></div>
+                    <div class="box2"><p><a href="">요가</a></p></div>
+                    <div class="box2"><p><a href="">크런치</a></p></div>
+                    <div class="box2"><p><a href="">레그<br>레이즈</a></p></div>
+                    <div class="box2"><p><a href="">정핑 잭</a></p></div>
+                    <div class="box2"><p><a href="">코어운동</a></p></div>
+                    <div class="box2"><p><a href="">맨몸<br>루틴</a></p></div>
+                </div>
+        </section>
+    </body>
+</html>

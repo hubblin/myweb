@@ -1,0 +1,41 @@
+#bigBox{
+    border:1px solid none;
+    width: 732px;
+    height:120px;
+    position: absolute;
+    margin:auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    right:0;
+    left:0;
+    overflow:hidden;
+}
+.box1{
+    border:1px solid black;
+    width:100px;
+    height:100px;
+    display:table;
+    float:left;
+    margin:10px;
+    background:#000000;
+    font-size:30px;
+}
+.box1 > p{
+    display:table-cell;
+    text-align:center;
+    vertical-align:middle;
+    font-family:"궁서체";
+}
+.box1 > p > a{
+    text-decoration:none;
+    text-align:none;
+    color:#ffffff;
+}
+
+.box1:hover{
+    width: 110px;
+    height: 110px;
+    margin: 5px;
+    font-size:35px;
+}
+
