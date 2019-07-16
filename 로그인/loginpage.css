@@ -1,0 +1,36 @@
+#login{
+    width:500px;
+    height:300px;
+    border:1px solid #000000;
+    display:block;
+    margin:auto;
+    right:0;
+    left:0;
+    top:50%;
+    bottom:50%;
+    position:absolute;
+}
+#login div{
+    display:flex;
+    margin:auto;
+    top:20%;
+    bottom:0;
+    width:100%;
+    position:relative;
+    justify-content:center;
+}
+#signup{
+    margin-top:20px;
+}
+#signup>ul>li{
+    float:left;
+    list-style:none;
+    border-left:1px solid #424242;
+    font-size:15px;
+}
+#signup   #first{
+    border-left:0px;
+}
+#signup > ul > li > a{
+    text-decoration:none;
+}

@@ -2,9 +2,22 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>스쿼트</title>
+        <title>아령</title>
         <style type="text/css">
         *{margin:0;padding:0;}
+            #a2{
+                background:linear-gradient(90deg, #424242, #848484, #D8D8D8, #FFFFFF);
+                color:#fff; 
+            } 
+            #a1{
+                margin:10px;
+                border:2px solid #424242;
+                font-size:30px;
+                background-image:url(건신.jpg);
+                background-repeat:no-repeat;
+                background-position:center;
+                background-size: 500px;
+            }
             header{padding-bottom: 25px;
                 margin-top: 10px;
                 margin-bottom:5px;
@@ -105,7 +118,13 @@
                 border:1px solid black;
                 border-left:0px;
             }
-            
+            #a1{
+                font-size:20px;
+            }
+            #a2{
+                margin-left:-10px;
+                margin-right:-10px;
+            }
             #sidebar{
                 display:block;
                 width:160px;
@@ -131,7 +150,7 @@
             }
             #article{
                 display:block;
-                width:926px;
+                width:925px;
                 margin:0 auto;
                 right:0;
                 left:0;
@@ -176,31 +195,12 @@
                 font-size:18px;
                 background:linear-gradient(90deg, #424242, #848484, #D8D8D8, #FFFFFF);
                 color:#D8D8D8;
-                padding:5px;
-                border:1px solid black;
-                border-left:0px solid;
             }
             .sidebar >ul>div>a{
                 text-decoration:none;
             }
-            .sidebar >ul>div>a>.exercise{
-                background:#848484;
-            }
-            .exercise{
-                display:none;
-            }
-            .sidebar >ul>div:hover .exercise{
-                display:block;
-            }
-            .sidebar >ul>div>a>.exercise:hover{
-                background:#222222;             
-            }
-            .sidebar >ul>div>a>#clicked{
-                background:linear-gradient(90deg, #000000,#424242,#848484, #D8D8D8, #FFFFFF);
-            }
         </style>
-        <link rel="stylesheet" href="css/pushup.css">
-        <link rel="stylesheet" href="css/login.css">
+        <link rel="stylesheet" href="../css/login.css">
     </head>
     <body>
             <div id="loginbar">
@@ -211,24 +211,24 @@
                     </ul>
                 </div>
         <header>
-                <div id="logo"><a href="index.html"><img src="건신.jpg" height="80px"></a></div>
+                <div id="logo"><a href="index.html"><img src="../건신.jpg" height="80px"></a></div>
                 <div id="slogan"><p>건강한 신체에 건강한 정신이 깃든다.</p></div>
-                <div id="search"><button id="searchButton"><img src="search.jpg" height="40px"></button>
+                <div id="search"><button id="searchButton"><img src="../search.jpg" height="40px"></button>
                 </div>
         </header>
         <nav id="navBar" style="z-index:999;">
             <ul id="main-menu">
-                <li><a href="개발자소개.html">개발자 소개</a>
+                <li><a href="../개발자소개.html">개발자 소개</a>
                     <ul id="sub-menu">
-                        <li><a href="개발자소개.html">임호균</a></li>
+                        <li><a href="../개발자소개.html">임호균</a></li>
                     </ul>
                 </li>
-                <li><a href="홈트레이닝.html">홈 트레이닝</a>
+                <li><a href="../홈트레이닝.html">홈 트레이닝</a>
                     <ul id="sub-menu">
-                        <li><a href="철봉.html">철봉</a></li>
-                        <li><a href="맨몸.html">맨몸</a></li>
-                        <li><a href="아령.html">아령</a></li>
-                        <li><a href="밴드.html">밴드</a></li>
+                        <li><a href="../철봉.html">철봉</a></li>
+                        <li><a href="../맨몸.html">맨몸</a></li>
+                        <li><a href="../아령.html">아령</a></li>
+                        <li><a href="../밴드.html">밴드</a></li>
                     </ul>
                 </li>
                 <li><a href="">헬스장 운동</a>
@@ -243,8 +243,8 @@
                 </li>
                 <li><a href="">호신술</a>
                     <ul id="sub-menu">
-                        <li><a href="호신술/동양무술.html">동양무술</a></li>
-                        <li><a href="호신술/서양무술.html">서양무술</a></li>
+                        <li><a href="동양무술.html">동양무술</a></li>
+                        <li><a href="서양무술.html">서양무술</a></li>
                     </ul>
                 </li>
             </ul>
@@ -253,22 +253,13 @@
         <section id="sidebar">
             <div class="sidebar">
                 <ul class="headmenu"><div class="sidetitle">개발자 소개</div>
-                    <a href="개발자소개.html"><li class="director">임호균</li></a>
+                    <a href="../개발자소개.html"><li class="director">임호균</li></a>
                 </ul>
                 <ul><div class="sidetitle">홈 트레이닝</div>
-                    <a href="철봉.html"><li class="철봉">철봉</li></a>
-                    <div><a href="맨몸.html"><li class="맨몸">맨몸</li>
-                        <a href="푸쉬업.html"><li class="exercise">푸쉬업</li></a>
-                        <a href="스쿼트.html"><li class="exercise">스쿼트</li></a>
-                        <a href="요가.html"><li class="exercise">요가</li></a>
-                        <a href="크런치.html"><li class="exercise">크런치</li></a>
-                        <a href="레그 레이즈.html"><li class="exercise">레그 레이즈</li></a>
-                        <a href="점핑 잭.html"><li id="clicked" class="exercise">점핑 잭</li></a>
-                        <a href="코어운동.html"><li class="exercise">코어운동</li></a>
-                        <a href="맨몸 루틴.html"><li class="exercise">맨몸 루틴</li></a>
-                    </a></div>
-                    <a href="아령.html"><li class="아령">아령</li></a>
-                    <a href="밴드.html"><li class="밴드">밴드</li></a>
+                    <a href="../철봉.html"><li class="철봉">철봉</li></a>
+                    <a href="../맨몸.html"><li class="맨몸">맨몸</li></a>
+                    <a href="../아령.html"><li class="아령">아령</li></a>
+                    <a href="../밴드.html"><li class="밴드">밴드</li></a>
                 </ul>
                 <ul><div class="sidetitle">헬스장 운동</div>
                     <a href=""><li>팔</li></a>
@@ -279,13 +270,10 @@
                     <a href=""><li>복근</li></a>
                 </ul>
                 <ul><div class="sidetitle">호신술</div>
-                    <a href="호신술/동양무술.html"><li>동양무술</li></a>
-                    <a href="호신술/서양무술.html"><li>서양무술</li></a>
+                    <a href="동양무술.html"><li>동양무술</li></a>
+                    <div><a href="서양무술.html"><li>서양무술</li></a></div>
                 </ul>
             </div>
-        </section>
-        <section id="context">
-
         </section>
     </body>
 </html>
