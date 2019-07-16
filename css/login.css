@@ -1,0 +1,23 @@
+#loginbar{
+    background:none;
+    display:flex;
+    position: relative;
+}
+#loginbar div a{
+    text-decoration:none;
+    color:#000000;
+}
+#loginbar > ul > li {
+    float:left;
+    list-style:none;
+    border-left:1px solid #424242;
+    margin-right:5px;
+    padding-left:5px;
+}
+#loginbar > ul > #donation{
+    border-left:none;
+}
+#loginbar >ul{
+    margin-right:0 auto;
+    margin-left:auto;
+}
